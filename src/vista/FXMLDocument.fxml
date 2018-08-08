@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" fx:controller="creacionarchivosxml.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="393.0" prefWidth="497.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="creacionarchivosxml.FXMLDocumentController">
     <children>
-        <Button layoutX="126" layoutY="90" text="Click Me!" onAction="#handleButtonAction" fx:id="button" />
-        <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />
+        <Label fx:id="ltiltulo" layoutX="80.0" layoutY="21.0" minHeight="16" minWidth="69" prefHeight="38.0" prefWidth="284.0" text="agregarempleados">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label fx:id="lnombre" layoutX="35.0" layoutY="78.0" minHeight="16" minWidth="69" prefHeight="38.0" prefWidth="130.0" text="nombre" />
+      <Label fx:id="ldireccion" layoutX="35.0" layoutY="123.0" minHeight="16" minWidth="69" prefHeight="38.0" prefWidth="130.0" text="direccion" />
+      <Label fx:id="lcodigoempleado" layoutX="25.0" layoutY="197.0" minHeight="16" minWidth="69" prefHeight="38.0" prefWidth="130.0" text="codigo empleado" />
+      <Label fx:id="lempleado" layoutX="35.0" layoutY="161.0" minHeight="16" minWidth="69" prefHeight="38.0" prefWidth="130.0" text="edad" />
+      <Label fx:id="ldepartamento" layoutX="15.0" layoutY="242.0" minHeight="16" minWidth="69" prefHeight="38.0" prefWidth="130.0" text="departamento" />
+      <Button layoutX="74.0" layoutY="318.0" mnemonicParsing="false" onAction="#agreagarempleado" text="agragar empleado" />
+      <Button layoutX="213.0" layoutY="318.0" mnemonicParsing="false" text="guardar archivo" />
+      <TextField fx:id="nombret" layoutX="148.0" layoutY="85.0" />
+      <TextField fx:id="direcciont" layoutX="148.0" layoutY="130.0" />
+      <TextField fx:id="edadt" layoutX="148.0" layoutY="168.0" />
+      <TextField fx:id="codigoempleado" layoutX="148.0" layoutY="204.0" />
+      <TextField fx:id="departamentot" layoutX="148.0" layoutY="249.0" />
     </children>
 </AnchorPane>

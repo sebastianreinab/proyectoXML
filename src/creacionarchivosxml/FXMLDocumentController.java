@@ -5,7 +5,9 @@
  */
 package creacionarchivosxml;
 
+import java.awt.TextField;
 import java.net.URL;
+import java.util.LinkedList;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -19,14 +21,39 @@ import javafx.scene.control.Label;
 public class FXMLDocumentController implements Initializable {
     
     @FXML
-    private Label label;
+    private Label ltitulo;
+    @FXML
+    private Label lnombre;
+    @FXML
+    private Label ldireccion;
+     @FXML
+     private Label lempleado;
+     @FXML
+     private Label lcodigoempleado;
+     @FXML
+     private Label ldepartamento;
+     @FXML
+    private TextField nombret;
+      @FXML
+    private TextField direcciont;
+      @FXML
+    private TextField edadt;
+      @FXML
+    private TextField codigoempleado;
+      @FXML
+    private TextField departamentot;
+    
+      
+    LinkedList<Empleado> listaEmpleados;
+    
     
     @FXML
-    private void handleButtonAction(ActionEvent event) {
-        System.out.println("You clicked me!");
-        label.setText("Hello World!");
-    }
-    
+    private void agregarempleado(ActionEvent event) {
+       listaEmpleados.add new (listaEmpleados);
+      
+               
+                            
+               }    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
